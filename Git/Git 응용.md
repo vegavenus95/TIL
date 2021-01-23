@@ -73,3 +73,22 @@ applypatch-msg, pre-applypatch, post-applypatch
 
 - post-applypatch: ```git am```명령에서 마지막으로 실행 되는 훅.   
 > patch를 보낸 사람이나 그룹에게 알림 메시지를 보낼 수 있으며, patch를 중단 시킬 수 없음.  
+
+3. 기타 훅  
+
+- pre-rebase: rebase하기 전에 실행되는 훅.   
+> 0이 아닌 값을 반환하면 rebase가 취소되며, 이 훅으로 이미 push한 커밋을 rebase 하지 못하게 할 수 있음.
+
+- post-rewrite : 커밋을 변경하는 명령을 실행했을 때 실행하는 훅.  
+> ```git commit --amend```나 ```git rebase```같은 명령이 post-rewrite 훅을 실행시키는 명령어에 해당함.(```git filter-branch```명령은 해당되지 않음)  
+> 훅의 용도는 post-checkout이나 post-merge훅과 비슷함.
+> 용량이 크거나, 깃이 관리하지 않는 파일을 옮기거나, 문서를 자동으로 생성할 경우 사용.  
+
+- post-merge : Merge가 끝나고 실행되는 훅.  
+> 깃이 추적하지 않는 정보를 관리하는 데 사용함. 
+
+- post-push : ```git push``` 명령을 실행하면 동작하는 훅.  
+> 리모트 정보를 업데이트 하고 난 후 리모트로 데이터를 전송하기 전에 실행함.  
+> 리모트의 이름과 주소를 인자로 받고, push를 중단시킬 수 있음(0이 아닌 값을 반환할 경우).
+
+
