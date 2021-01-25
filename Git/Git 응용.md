@@ -90,5 +90,19 @@ applypatch-msg, pre-applypatch, post-applypatch
 - post-push : ```git push``` 명령을 실행하면 동작하는 훅.  
 > 리모트 정보를 업데이트 하고 난 후 리모트로 데이터를 전송하기 전에 실행함.  
 > 리모트의 이름과 주소를 인자로 받고, push를 중단시킬 수 있음(0이 아닌 값을 반환할 경우).
+  
+  
+### 서버 훅  
+##### push 전후에 실행되는 훅, push전에 실행되는 훅이 0이 아닌 값을 반환할 경우, 해당 push는 거절됨.      
 
+pre-receive, update, post-receive
+
+- pre-receive : push하면 가장 처음 실행되는 훅.
+> 해당 스크립트는 표준 입력(STDIN)으로 push하는 레퍼런스를 목록으로 입력받습니다. 0이 아닌 값을 반환하게 되면 해달 레퍼런스를 모두 거절합니다. Fast-forward Push가 아니면 거절하거나, 프랜치 권한 Push 권한을 제어하려면 이 훅에서 하는 것이 좋습니다. 
+
+- update : push하면 실행되는 훅.  
+> 한 번에 여러 개의 브런치에 push할 경우 update는 브랜치마다 실행됨(pre-receive는 각각 실행).  
+
+- post-receive :  push한 후에 실행되는 훅.  
+> 이 스크립트가 종료할 때까지 클라이언트와의 연결은 유지되고, push를 중단시킬 수 없음.
 
