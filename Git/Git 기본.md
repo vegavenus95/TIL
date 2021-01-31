@@ -1,5 +1,9 @@
 # Git 
 
+### 정의  
+> Git이란 버전 관리 시스템(VCS, Version Control System)의 한 종류  
+
+### 참고사이트
 ```
 https://learngitbranching.js.org/
 ```
