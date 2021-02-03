@@ -3,10 +3,8 @@
 ### 정의  
 > Git이란 버전 관리 시스템(VCS, Version Control System)의 한 종류  
 
-### 참고사이트
-```
-https://learngitbranching.js.org/
-```
+### 참고사이트  
+실습 및 연습이 가능한 [사이트](https://learngitbranching.js.org)를 활용 할 것!
 
 ### git 명령어
 
