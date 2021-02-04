@@ -19,3 +19,10 @@
 - Virtual DOM 사용    
 - Angular, React에 비해 매우 작고 가벼우며 복잡도가 낮음    
 - Template과 Component를 사용하여 재사용이 가능한 사용자 인터페이스를 묶고 View Layer를 정리하여 사용    
+
+### 장점
+- 유연함, 가벼움
+- 일부 UI 적용 가능
+- SPA(Single Page Application; 단일 페이지 애플리케이션)을 위해 필요한 라우터 기능 지원
+- 가상 DOM으로 빠른 UI 렌더링(서버로부터 HTML 파일을 받아 브라우저에 뿌려주는 과정) 가능
+
