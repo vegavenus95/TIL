@@ -26,7 +26,8 @@ commit: Mutations의 함수 실행
 여기서 비즈니스로직을 처리함.
 Dispatch: Actions의 함수 실행
 Actioncs에서 중요한 로직을 다 짜고
-그 다음 commit으로 Mutation으로 넘김
+그 다음 commit으로 Mutation으로 넘김.   
+-> Dispatch(‘[action메소드명]’)를 통해 Vuex store의 Action 그룹에 속한 메서드를 실행시킬 수 있음.  
 
 ![vuex](https://user-images.githubusercontent.com/41683845/108675360-0bae9880-752a-11eb-820a-2866fb58b781.PNG)  
 
