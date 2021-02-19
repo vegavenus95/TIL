@@ -12,4 +12,4 @@
 
 - 서버 사이드 스크립트(server-side-script) : 해당 소스의 실행 결과를 확인하기 위해 웹서버를 거쳐야 하는 스크립트를 말하며, ASP, PHP, JSP, PYTHON, PERL, RUBY 등이 있음(JavaScript도 서버사이드 언어로 사용 가능).  
 
--클라이언트 사이드 스크립트(client-side-script) : 내장된 번역기(인터넷 익스플로러등)에 의해 실행되는 스크립트로 서버를 거치지 않고 사용자쪽(웹서버에 접속한 PC)에서 처리되는 스크립트를 말하며, JavaScript, VBScript, JScript등이 있음.  
+- 클라이언트 사이드 스크립트(client-side-script) : 내장된 번역기(인터넷 익스플로러등)에 의해 실행되는 스크립트로 서버를 거치지 않고 사용자쪽(웹서버에 접속한 PC)에서 처리되는 스크립트를 말하며, JavaScript, VBScript, JScript등이 있음.  
