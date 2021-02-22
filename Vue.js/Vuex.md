@@ -12,3 +12,4 @@
 ### 특징  
 > state, mutation, actions, getters
 
+![vuex](https://user-images.githubusercontent.com/41683845/108675360-0bae9880-752a-11eb-820a-2866fb58b781.PNG)
