@@ -12,6 +12,22 @@
 ### 특징  
 > state, mutation, actions, getters
 
+- state: data 역할, 데이터를 불러옴.  
+
+- getters: computed 역할, 캐시되어야할 데이터.  
+위 두 속성으로 component에 접근  
+
+- mutations: 이곳에 있는 함수들을 commit해서 state를 변화시킴.  
+mutations에 비동기 로직이 포함된다면? -> 순서를 알기 어려움
+State 변화를 Mutations에서 하고
+commit: Mutations의 함수 실행  
+
+- actions: 비동기로직을 처리함.
+여기서 비즈니스로직을 처리함.
+Dispatch: Actions의 함수 실행
+Actioncs에서 중요한 로직을 다 짜고
+그 다음 commit으로 Mutation으로 넘김
+
 ![vuex](https://user-images.githubusercontent.com/41683845/108675360-0bae9880-752a-11eb-820a-2866fb58b781.PNG)  
 
 ### 라이프사이클  
