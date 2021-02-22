@@ -14,7 +14,7 @@
 
 ![vuex](https://user-images.githubusercontent.com/41683845/108675360-0bae9880-752a-11eb-820a-2866fb58b781.PNG)  
 
-> 라이프사이클  
+### 라이프사이클  
   
 1. 컴포넌트는 Dispatch를 통해 Actions을 접근한다.  
 2. Action에서는 Backend API를 호출하여 값을 가져온 후에, Commit을 통해 Mutations에 접근한다.  
