@@ -27,7 +27,10 @@ commit: Mutations의 함수 실행
 Dispatch: Actions의 함수 실행
 Actioncs에서 중요한 로직을 다 짜고
 그 다음 commit으로 Mutation으로 넘김.   
+  
 -> Dispatch(‘[action메소드명]’)를 통해 Vuex store의 Action 그룹에 속한 메서드를 실행시킬 수 있음.  
+Action메소드 혹은 Vue컴포넌트에서 Commit(‘[mutation 메소드명]’)을 통해 Mutation 그룹에 속한 메서드를 실행할 수 있음.
+컴포넌트에서는 $store.commit(), Actions 메소드에서는 첫번째 인자로 넘겨받는 context.commit()으로 트리거 시킴.
 
 ![vuex](https://user-images.githubusercontent.com/41683845/108675360-0bae9880-752a-11eb-820a-2866fb58b781.PNG)  
 
